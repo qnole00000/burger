@@ -199,6 +199,7 @@ h6 {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px 10px;
+    justify-content: center;
 }
 
 .food-list__card {
@@ -275,7 +276,7 @@ h6 {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    padding: 120px 0;
+    padding: 120px 0 100px;
     
 }
 
@@ -337,4 +338,69 @@ h6 {
     width: 141px;
     height: 39px;
     font-size: 12px;
+}
+
+/* feedback */
+
+.feedback {
+
+}
+
+.feedback .container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ max-width: 880px;
+ padding: 40px 0 150px;
+
+}
+
+.feedback__img {
+
+}
+
+.feedback__text {
+    margin: 0;
+    text-align: center;
+    max-width: 370px;
+}
+
+.feedback__text::before {
+    content: url("../images/icons/quote.svg");
+}
+
+.feedback__desk {
+    opacity: 0.7;
+    margin-bottom: 27px;
+    margin-top: 40px;
+}
+
+.feedback__author {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+}
+
+.feedback__subauthor {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+/* download */
+
+.download {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+
+.download .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.download__text {
+    font-size: 40px;
+    font-weight: 500;
 }
