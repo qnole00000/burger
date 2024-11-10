@@ -424,11 +424,18 @@ h6 {
     letter-spacing: 0%;
     opacity: 0.8;
     display: block;
-
+    transition: opacity 0.2s;
 }
+
 .contacts__mail {
     margin-bottom: 7px;
 }
+
+.contacts__mail:hover,
+.contacts__site:hover {
+    opacity: 1;
+}
+
 
 .contacts__mail::before {
     content: url("/images/icons/mail.svg");
@@ -455,6 +462,11 @@ h6 {
 .menu__item {
     font-size: 12px;
     opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.menu__item:hover{
+    opacity: 1;
 }
 
 .menu__item:not(:last-child) {
@@ -466,4 +478,7 @@ h6 {
 
 .social__icon:not(:last-child) {
     margin-right: 7px;
+}
+
+.social__img:hover {
 }
