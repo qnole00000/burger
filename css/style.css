@@ -267,9 +267,7 @@ h6 {
 }
 
 /* PRODUCT */
-.product {
-    
-}
+.product {}
 
 .product .container {
     display: flex;
@@ -277,17 +275,17 @@ h6 {
     gap: 30px;
     justify-content: center;
     padding: 120px 0 100px;
-    
+
 }
 
 .product__card {
     width: 48%;
-    
+
 }
- 
+
 .product__card__elements {
     padding: 60px 25px 60px 50%;
-    
+
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
@@ -307,9 +305,11 @@ h6 {
 .product__card__elements--2 {
     background-image: url(/images/product-2.jpg);
 }
+
 .product__card__elements--3 {
     background-image: url(/images/product-3.jpg);
 }
+
 .product__card__elements--4 {
     background-image: url(/images/product-4.jpg);
 }
@@ -342,22 +342,18 @@ h6 {
 
 /* feedback */
 
-.feedback {
-
-}
+.feedback {}
 
 .feedback .container {
- display: flex;
- align-items: center;
- justify-content: space-between;
- max-width: 880px;
- padding: 40px 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 880px;
+    padding: 40px 0 150px;
 
 }
 
-.feedback__img {
-
-}
+.feedback__img {}
 
 .feedback__text {
     margin: 0;
@@ -403,4 +399,71 @@ h6 {
 .download__text {
     font-size: 40px;
     font-weight: 500;
+}
+
+/* footer */
+.footer {
+    padding: 125px 0 140px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts {}
+
+.footer__logo {
+    margin-bottom: 30px;
+}
+
+.contacts__mail,
+.contacts__site {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    opacity: 0.8;
+    display: block;
+
+}
+.contacts__mail {
+    margin-bottom: 7px;
+}
+
+.contacts__mail::before {
+    content: url("/images/icons/mail.svg");
+    margin-right: 7px;
+}
+
+.contacts__site::before {
+    content: url("/images/icons/global.svg");
+    margin-right: 7px;
+}
+
+.contacts__site {}
+
+.footer__menu {}
+
+.menu__header {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.menu__list {}
+
+.menu__item {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.menu__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.footer__social {}
+
+.social__icon:not(:last-child) {
+    margin-right: 7px;
 }
