@@ -199,7 +199,7 @@ h6 {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px 10px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .food-list__card {
@@ -243,6 +243,7 @@ h6 {
 .order .container {
     display: flex;
     align-items: center;
+
 }
 
 .order__image {
@@ -280,7 +281,7 @@ h6 {
 
 .product__card {
     width: 48%;
-
+   
 }
 
 .product__card__elements {
@@ -292,6 +293,10 @@ h6 {
     background-position: center;
     min-height: 300px;
     background-color: #312F30;
+
+    height: 100%;
+
+    margin: 10px;
 }
 
 .product__card--leftText {
@@ -353,7 +358,10 @@ h6 {
 
 }
 
-.feedback__img {}
+.feedback__img {
+
+    max-width: 70%;
+}
 
 .feedback__text {
     margin: 0;
@@ -394,6 +402,7 @@ h6 {
 .download .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .download__text {
@@ -481,4 +490,212 @@ h6 {
 }
 
 .social__img:hover {
+}
+
+/* MEDIA */
+
+@media (max-width: 1100px) {
+    .hero__elements {
+        width: 48%;
+    }
+
+    .hero__text {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 100px 0 50px;
+    }
+
+    .order .container {
+        flex-direction: column;
+    }
+
+    .order__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order__image {
+        max-width: 80%;
+    }
+
+    .product__card__elements {
+        
+    }
+}
+
+@media (max-width: 750px) {  
+    .hero {
+        min-height: auto;
+    }
+
+    .hero__title {
+        font-size: 35px;
+    }
+
+    .hero__text {
+        font-size: 14px;
+    }
+    
+    .product .container {
+        padding: 50px 0;
+    }
+
+    .product__card {
+        width: 100%;
+        
+    }
+
+    .food-list {
+        padding: 50px 0;
+    }
+
+    .feedback .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 10px;
+    }
+
+    .download {
+        padding: 30px 0;
+    }
+
+    .download__text {
+        font-size: 32px;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .footer__menu {
+        order: 1;
+        width: 30%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer__contacts, .footer__social {
+        order: 2;
+        text-align: center;
+    }
+
+    .footer__social {
+        margin: auto 0;
+    }
+}
+
+@media (max-width: 650px) {
+
+
+    .header__container {
+        justify-content: space-around;
+    }
+
+    .header .btn {
+        display: none;
+    }
+
+    .feedback__img {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .food-list__card {
+        width: 100%;
+    }
+    .food-list__img { 
+        width: 100%;
+        height: 250px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .header__container {
+        justify-content: center;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .download__text {
+        font-size: 20px;
+    }
+    
+    .product__card {
+        height: 200px;
+    }
+
+    .product__card__elements {
+        min-height: auto;
+        padding: 5px 15px 0 50%;
+    }
+
+    .product__title {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+
+    .product__desc {
+        margin-bottom: 4px;
+        font-size: 14px;   
+    }
+
+    .product__card--leftText {
+        padding: 5px 50% 0 15px;
+    }
+}
+
+@media (max-width: 380px) { 
+    .header__list {
+        gap: 10px;
+    }
+
+    .hero__title {
+        font-size: 22px;
+    }
+
+    .hero__text {
+        font-size: 12px;
+    }
+    .product__btn {
+        width: auto;
+        height: 15%;
+    }
+
+    .product__title {
+        line-height: 20px;
+    }
+
+    .download .container {
+        flex-direction: column;
+    }
+
+    .download__text {
+        margin-bottom: 20px;
+    }
+
+    .menu__header {
+        margin-top: 20px;
+    }
+
+    .header__item {
+        font-size: 12px;
+    }
 }
